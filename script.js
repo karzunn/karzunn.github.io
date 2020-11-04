@@ -15,3 +15,7 @@ Blackbaud_Open({
     card_holder: 'John Doe'
 }
 );
+
+document.addEventListener('checkoutComplete', function (event) {
+    console.log('Token: ', event.detail.transactionToken);
+});
