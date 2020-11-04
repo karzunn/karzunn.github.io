@@ -4,17 +4,19 @@ Blackbaud_Init({
     transaction_type: "card_not_present"
 });
 
+/*
 Blackbaud_Open({
     amount: '1.00',
-    billing_address_email: 'test@test.com',
-    billing_address_line: '123 Test Street',
-    billing_address_country: 'US',
-    billing_address_city: 'Slothtown',
-    billing_address_post_code: '22222',
-    billing_address_state: 'SC',
-    card_holder: 'John Doe'
 }
 );
+*/
+
+Blackbaud_OpenStoreCardForm(
+    {
+        card_token: "6672ba4b-fd19-4cde-80c1-c7e541929b07",
+        key: "2d91906c-4f0a-4cc2-b6c9-b383056e577b"
+    }
+)
 
 document.addEventListener('checkoutComplete', function (event) {
     console.log('Token: ', event.detail.transactionToken);
