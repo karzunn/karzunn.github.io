@@ -4,8 +4,14 @@ Blackbaud_Init({
     transaction_type: "card_not_present"
 });
 
-Blackbaud_Open(
-    {
-    amount: '12.00'
-    }  
+Blackbaud_Open({
+    amount: '1.00',
+    billing_address_email: 'test@test.com',
+    billing_address_line: '123 Test Street',
+    billing_address_country: 'US',
+    billing_address_city: 'Slothtown',
+    billing_address_post_code: '22222',
+    billing_address_state: 'SC',
+    card_holder: 'John Doe'
+}
 );
