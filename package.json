@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "affinity-propagation": "0.0.1",
+    "axios": "^0.21.0",
     "skmeans": "^0.11.3"
   }
 }
