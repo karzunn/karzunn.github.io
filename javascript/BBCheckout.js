@@ -25,6 +25,8 @@ Blackbaud_OpenStoreCardForm(
     }
 )
 
-alert("Card token is: " + cardToken.toString())
-
 }
+
+document.addEventListener('checkoutComplete', function (event) {
+    alert("The card token is: " + cardToken)
+});
