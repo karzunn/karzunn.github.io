@@ -7,8 +7,12 @@ Blackbaud_Init({
 
 Blackbaud_OpenStoreCardForm(
     {
-        card_token: "6672ba4b-fd19-4cde-80c1-c7e541929b07",
-        key: "2d91906c-4f0a-4cc2-b6c9-b383056e577b"
+        card_token: "ce53bcff-c26d-4c8e-af6c-b54d038ef776",
+        key: "2d91906c-4f0a-4cc2-b6c9-b383056e577b",
+        primary_color: "#14795a",
+        secondary_color: "#cc9f51",
+        font_color: "#FFFFFF",
+        font_family: "sans-serif"
     }
 )
 
